@@ -7,6 +7,5 @@ Player::Player() {}
 Player::~Player() {}
 
 void Player::ApplyDamageOnEnemy(Enemy* enemy) {
-	float damage = currentWeapon->GetTotalDamage();
-	enemy->ApplyDamage(damage);
+	enemy->ApplyDamage(currentWeapon->GetTotalDamage());
 }
