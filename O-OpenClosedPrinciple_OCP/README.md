@@ -1,10 +1,6 @@
-# SOLID Examlpes
+# Open/Closed Principle (OCP)
 
-Here are some examples of what should and should not be done when implementing the different principles. 
-Inside each project you can find two parts of it, the bad path and the good one.
+In this example, on the $\textcolor{red}{\textsf{bad}}$  path side, we have the damage of the **Weapon** calculated inside a function called **GetTotalDamage** depending on the weapon type.
+This type of function makes for us impossible to add a new **Weapon** without modifiying the function itself.
 
-In the bad path folder there is a wrong implementation of the principle the project is referring to, while in the good path folder you could find the correct one.
-
-Each project has its own README file in order to specify the bad and good situation and in which files you can find the changes to compare them.
-
-The whole solution is a progression of the same project, starting in the **S-SingleResponsibilityPrinciple_SRP** bad folder until it reachs **D-DependencyInversionPrinciple_DIP** good folder (**S**->**O**->**L**->**I**->**D**). So in order to check how the final implementation of the project looks like, you could check the last folder mentioned.
+So to solve this in the $\textcolor{green}{\textsf{good}}$ path, we use the **Weapon** class as an interface and create different classes such as **Blade** and **Blunt** that implements the **Weapon** interface, overriding the **GetTotalDamage** in each class giving us the different damage outputs.
