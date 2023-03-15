@@ -16,6 +16,7 @@ float Door::GetHealth() {
 	return health;
 }
 
+//IActivable implementation
 bool Door::Activate() {
 	return OpenDoor();
 }

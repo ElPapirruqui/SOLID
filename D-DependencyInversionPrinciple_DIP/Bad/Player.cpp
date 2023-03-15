@@ -23,6 +23,10 @@ void Player::AttackTarget(IDamageable* target){
 	target->TakeDamage(currentWeapon->GetTotalDamage());
 }
 
+/*
+* Here we have the 2 definitions of the polymorphism for the Activate function
+*/
+
 bool Player::Activate(Lever* lever) {
 	return lever->TurnLever();
 }

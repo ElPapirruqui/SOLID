@@ -28,6 +28,7 @@ void Player::Move(SVector3 newPosition) {
 	position = newPosition;
 }
 
+//Now the polymorphism is gone and the definition of Activate is defined in the class that implements the IActivable interface
 bool Player::Activate(IActivable* activable) {
 	return activable->Activate();
 }

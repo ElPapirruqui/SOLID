@@ -4,6 +4,7 @@ Lever::Lever() {}
 
 Lever::~Lever() {}
 
+//IActivable implementation
 bool Lever::Activate() {
 	return TurnLever();
 }
