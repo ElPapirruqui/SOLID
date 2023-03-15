@@ -12,6 +12,9 @@ float Enemy::GetHealth() {
 	return health;
 }
 
+/*
+* This is the new function to substract health on the enemy
+*/
 void Enemy::ApplyDamage(float damage) {
 	health -= damage;
 }

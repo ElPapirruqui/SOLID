@@ -6,6 +6,11 @@ Player::Player() {}
 
 Player::~Player() {}
 
+/*
+* Here we can see that the ApplyDamageOnEnemy function has more than one responsability:
+* Calculate the damage based on the weapon type the Player is currently helding
+* Substract health from the Enemy reference
+*/
 void Player::ApplyDamageOnEnemy(Enemy* enemy) {
 	float damage = currentWeapon->GetDamage();
 	EWeaponType type = currentWeapon->GetType();

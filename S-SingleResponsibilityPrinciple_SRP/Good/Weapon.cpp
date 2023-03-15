@@ -8,6 +8,9 @@ float Weapon::GetDamage() {
 	return damage;
 }
 
+/*
+* This function now returns the damage of the weapon based on its type
+*/
 float Weapon::GetTotalDamage() {	
 	switch (type)
 	{
