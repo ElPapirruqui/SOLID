@@ -3,3 +3,4 @@
 S-SingleResponsibilityPrinciple_SRP
 O-OpenClosedPrinciple_OCP
 L-LiskovSubstitutionPrinciple_LSP
+I-InterfaceSegregationPrinciple_ISP
