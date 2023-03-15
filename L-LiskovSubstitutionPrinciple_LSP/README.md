@@ -1,6 +1,6 @@
 # Liskov Substitution Principle (LSP)
 
-In this example, on the $\textcolor{red}{\textsf{bad}}$ path side, we have a new class called **Crate** that inherits from **Enemy** since this last class has health that can be damaged and it drops loot when dies. But the problem here is that **Enemy** also can move and attack.
+In this example we want to be able to have a **Crate** class that can be damaged and be able to drop loot. We see that our Enemy class has these 2 functions already defined so, on the $\textcolor{red}{\textsf{bad}}$ path side, we have a new class called **Crate** that inherits from **Enemy** since this last class has health that can be damaged and it drops loot when dies. But the problem here is that **Enemy** also can move and attack.
 This interfere with the **Crate** class, given that this cant move or attack, so we must have to override these two functions in order to prevent our **Crate** to perform these actions.
 
 To solve this, on the $\textcolor{green}{\textsf{good}}$ path side, we create 4 new interfaces: **IAttacker**, **IDamageable**, **ILooteable** and **IMovable**.
