@@ -139,18 +139,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Bad\Enemy.cpp" />
+    <ClCompile Include="Bad\Enemies\Crate.cpp" />
+    <ClCompile Include="Bad\Enemies\Enemy.cpp" />
     <ClCompile Include="Bad\Player.cpp" />
     <ClCompile Include="Bad\Weapons\Blade.cpp" />
     <ClCompile Include="Bad\Weapons\Blunt.cpp" />
     <ClCompile Include="Bad\Weapons\Weapon.cpp" />
+    <ClCompile Include="Good\Crate.cpp" />
+    <ClCompile Include="Good\Enemy.cpp" />
+    <ClCompile Include="Good\Player.cpp" />
+    <ClCompile Include="Good\Weapons\Blade.cpp" />
+    <ClCompile Include="Good\Weapons\Blunt.cpp" />
+    <ClCompile Include="Good\Weapons\Weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Bad\Enemy.h" />
+    <ClInclude Include="Bad\Enemies\Crate.h" />
+    <ClInclude Include="Bad\Enemies\Enemy.h" />
     <ClInclude Include="Bad\Player.h" />
     <ClInclude Include="Bad\Weapons\Blade.h" />
     <ClInclude Include="Bad\Weapons\Blunt.h" />
     <ClInclude Include="Bad\Weapons\Weapon.h" />
+    <ClInclude Include="Good\Crate.h" />
+    <ClInclude Include="Good\Enemy.h" />
+    <ClInclude Include="Good\Interfaces\IAttacker.h" />
+    <ClInclude Include="Good\Interfaces\IDamageable.h" />
+    <ClInclude Include="Good\Interfaces\ILooteable.h" />
+    <ClInclude Include="Good\Interfaces\IMovable.h" />
+    <ClInclude Include="Good\Player.h" />
+    <ClInclude Include="Good\Weapons\Blade.h" />
+    <ClInclude Include="Good\Weapons\Blunt.h" />
+    <ClInclude Include="Good\Weapons\Weapon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
