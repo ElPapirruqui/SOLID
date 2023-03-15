@@ -1,10 +1,6 @@
-# SOLID Examlpes
+# Interface Segregation Principle (ISP)
 
-Here are some examples of what should and should not be done when implementing the different principles. 
-Inside each project you can find two parts of it, the bad path and the good one.
+In this example we want our **Enemy** to be able to be a common or a boss type, giving to the last one mentioned the ability to perform a special attack. So for this, on the $\textcolor{red}{\textsf{bad}}$ path side, we have a function called **SpecialAttackOnTarget** that only has a behaviour defined when the enemy type is a boss, leaving the rest of the **Enemy** types with a function they are not going to use in the future.
 
-In the bad path folder there is a wrong implementation of the principle the project is referring to, while in the good path folder you could find the correct one.
-
-Each project has its own README file in order to specify the bad and good situation and in which files you can find the changes to compare them.
-
-The whole solution is a progression of the same project, starting in the **S-SingleResponsibilityPrinciple_SRP** bad folder until it reachs **D-DependencyInversionPrinciple_DIP** good folder (**S**->**O**->**L**->**I**->**D**). So in order to check how the final implementation of the project looks like, you could check the last folder mentioned.
+To solve this, in the $\textcolor{green}{\textsf{good}}$ path side, we now have the **Enemy** class as an interface or parent class which is going to be implemented or inherited for the new **Enemy** type classes, the **BossEnemy** and **CommonEnemy** classes.
+With this change done, we also create a new interface called **ISpecialAttacker** in order to give this behaviour only to the classes that needs to have an special attack.
