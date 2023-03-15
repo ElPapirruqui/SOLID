@@ -1,5 +1,5 @@
 #include "Weapons/Weapon.h"
-#include "Enemy.h"
+#include "Enemies/Enemy.h" 
 #include "Player.h"
 
 Player::Player() {}
@@ -7,5 +7,9 @@ Player::Player() {}
 Player::~Player() {}
 
 void Player::ApplyDamageOnEnemy(Enemy* enemy) {
-	enemy->ApplyDamage(currentWeapon->GetTotalDamage());
+	enemy->TakeDamage(currentWeapon->GetTotalDamage());
+}
+
+void Enemy::TakeDamage(float damage) {
+	health -= damage;
 }
