@@ -149,6 +149,16 @@
     <ClCompile Include="Bad\Weapons\Weapon.cpp" />
     <ClCompile Include="Bad\WorldObjects\Door.cpp" />
     <ClCompile Include="Bad\WorldObjects\Lever.cpp" />
+    <ClCompile Include="Good\Enemies\BossEnemy.cpp" />
+    <ClCompile Include="Good\Enemies\CommonEnemy.cpp" />
+    <ClCompile Include="Good\Enemies\Enemy.cpp" />
+    <ClCompile Include="Good\Player.cpp" />
+    <ClCompile Include="Good\Weapons\Blade.cpp" />
+    <ClCompile Include="Good\Weapons\Blunt.cpp" />
+    <ClCompile Include="Good\Weapons\Weapon.cpp" />
+    <ClCompile Include="Good\WorldObjects\Crate.cpp" />
+    <ClCompile Include="Good\WorldObjects\Door.cpp" />
+    <ClCompile Include="Good\WorldObjects\Lever.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bad\WorldObjects\Crate.h" />
@@ -166,6 +176,22 @@
     <ClInclude Include="Bad\Weapons\Weapon.h" />
     <ClInclude Include="Bad\WorldObjects\Door.h" />
     <ClInclude Include="Bad\WorldObjects\Lever.h" />
+    <ClInclude Include="Good\Enemies\BossEnemy.h" />
+    <ClInclude Include="Good\Enemies\CommonEnemy.h" />
+    <ClInclude Include="Good\Enemies\Enemy.h" />
+    <ClInclude Include="Good\Interfaces\IActivable.h" />
+    <ClInclude Include="Good\Interfaces\IAttacker.h" />
+    <ClInclude Include="Good\Interfaces\IDamageable.h" />
+    <ClInclude Include="Good\Interfaces\ILooteable.h" />
+    <ClInclude Include="Good\Interfaces\IMovable.h" />
+    <ClInclude Include="Good\Interfaces\ISpecialAttacker.h" />
+    <ClInclude Include="Good\Player.h" />
+    <ClInclude Include="Good\Weapons\Blade.h" />
+    <ClInclude Include="Good\Weapons\Blunt.h" />
+    <ClInclude Include="Good\Weapons\Weapon.h" />
+    <ClInclude Include="Good\WorldObjects\Crate.h" />
+    <ClInclude Include="Good\WorldObjects\Door.h" />
+    <ClInclude Include="Good\WorldObjects\Lever.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
