@@ -1,10 +1,6 @@
-# SOLID Examlpes
+# Single Responsibility Principle (SRP)
 
-Here are some examples of what should and should not be done when implementing the different principles. 
-Inside each project you can find two parts of it, the bad path and the good one.
+In this example, as the **bad** path, we have a function called ApplyDamageOnEnemy inside the Player class that is intended to do damage to an Enemy reference given in as a parameter.
+Inside the function we can see that it applies the logic to damage the enemy but also another logic to calculate the damage based on the weapon type the Player is currently helding.
 
-In the bad path folder there is a wrong implementation of the principle the project is referring to, while in the good path folder you could find the correct one.
-
-Each project has its own README file in order to specify the bad and good situation and in which files you can find the changes to compare them.
-
-The whole solution is a progression of the same project, starting in the **S-SingleResponsibilityPrinciple_SRP** bad folder until it reachs **D-DependencyInversionPrinciple_DIP** good folder (**S**->**O**->**L**->**I**->**D**). So in order to check how the final implementation of the project looks like, you could check the last folder mentioned.
+To solve this in the **good** path, we move this logic inside a Weapon class so the Player doesnt concern about how the damage is calculated. This responsability now lies on the Weapon class.
