@@ -3,6 +3,9 @@
 
 class Player;
 
+/*
+* Crate inherits from Enemy to have health and dropeable loot
+*/
 class Crate : public Enemy {
 public:
 	Crate();

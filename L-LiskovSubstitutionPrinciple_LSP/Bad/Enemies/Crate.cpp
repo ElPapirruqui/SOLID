@@ -5,9 +5,14 @@ Crate::Crate() {}
 
 Crate::~Crate() {}
 
+
 void Crate::TakeDamage(float damage) {
 	health -= damage * 1.2;
 }
+
+/*
+*Here we can see that the functions Move and Attack player has to be empty in order the Crate to prevent moving or attacking
+*/
 
 void Crate::Move(SVector3 newPosition) {
 	//Crate cant move
