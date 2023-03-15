@@ -14,4 +14,83 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Bad\Enemies\BossEnemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bad\Enemies\CommonEnemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bad\Enemies\Enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bad\Weapons\Blade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bad\Weapons\Blunt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bad\Weapons\Weapon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bad\WorldObjects\Crate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bad\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bad\WorldObjects\Door.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bad\WorldObjects\Lever.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Bad\Enemies\BossEnemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bad\Enemies\CommonEnemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bad\Enemies\Enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bad\Interfaces\IAttacker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bad\Interfaces\IDamageable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bad\Interfaces\ILooteable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bad\Interfaces\IMovable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bad\Interfaces\ISpecialAttacker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bad\Weapons\Blade.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bad\Weapons\Blunt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bad\Weapons\Weapon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bad\WorldObjects\Crate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bad\Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bad\WorldObjects\Door.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bad\WorldObjects\Lever.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

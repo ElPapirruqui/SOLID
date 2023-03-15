@@ -4,6 +4,8 @@
 
 class Weapon;
 class Enemy;
+class Lever;
+class Door;
 
 class Player : public IDamageable, IAttacker {
 public:
@@ -16,4 +18,6 @@ protected:
 	void AttackTarget(IDamageable* target) override;
 private:
 	Weapon* currentWeapon;
+	bool Activate(Lever* lever);
+	bool Activate(Door* door);
 };

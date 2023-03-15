@@ -1,4 +1,6 @@
 #include "Weapons/Weapon.h"
+#include "WorldObjects/Door.h"
+#include "WorldObjects/Lever.h"
 #include "Player.h"
 
 Player::Player() {}
@@ -19,4 +21,12 @@ void Player::TakeDamage(float damage) {
 
 void Player::AttackTarget(IDamageable* target){
 	target->TakeDamage(currentWeapon->GetTotalDamage());
+}
+
+bool Player::Activate(Lever* lever) {
+	return lever->TurnLever();
+}
+
+bool Player::Activate(Door* door) {
+	return door->OpenDoor();
 }
