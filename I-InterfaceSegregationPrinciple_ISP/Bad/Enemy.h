@@ -17,7 +17,8 @@ public:
 protected:
 	void Move(SVector3 newPosition) override;
 	void AttackTarget(IDamageable* target) override;
+	// This function is the new special attack only for bosses
 	void SpecialAttackOnTarget(IDamageable* target) override;
-	bool CheckIfCanSpecialAttack() override;
+	// This defines the enemy type
 	EEnemyType type;
 };

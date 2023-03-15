@@ -4,6 +4,10 @@ Enemy::Enemy() {}
 
 Enemy::~Enemy() {}
 
+/*
+* Definition for special attack is gone
+*/
+
 void Enemy::SetHealth(float newHealth) {
 	health = newHealth;
 }

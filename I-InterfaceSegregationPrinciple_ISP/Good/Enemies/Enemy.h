@@ -4,6 +4,10 @@
 #include "../Interfaces/IAttacker.h"
 #include "../Interfaces/ILooteable.h"
 
+/*
+* Now enemy type and special attack is gone from the parent class
+*/
+
 class Enemy : protected IDamageable, IMovable, IAttacker, ILooteable{
 public:
 	Enemy();
