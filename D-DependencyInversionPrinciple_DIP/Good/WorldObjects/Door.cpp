@@ -16,6 +16,10 @@ float Door::GetHealth() {
 	return health;
 }
 
+bool Door::Activate() {
+	return OpenDoor();
+}
+
 bool Door::OpenDoor() {
 	return true;
 }

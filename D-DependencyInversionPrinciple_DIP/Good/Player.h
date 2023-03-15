@@ -1,13 +1,13 @@
 #pragma once
 #include "Interfaces/IDamageable.h"
 #include "Interfaces/IAttacker.h"
+#include "Interfaces/IMovable.h"
 
 class Weapon;
 class Enemy;
-class Lever;
-class Door;
+class IActivable;
 
-class Player : public IDamageable, IAttacker {
+class Player : public IDamageable, IAttacker, IMovable {
 public:
 	Player();
 	virtual ~Player();
@@ -16,8 +16,8 @@ public:
 	float GetHealth() override;
 protected:
 	void AttackTarget(IDamageable* target) override;
+	void Move(SVector3 newPosition) override;
 private:
 	Weapon* currentWeapon;
-	bool Activate(Lever* lever);
-	bool Activate(Door* door);
+	bool Activate(IActivable* activable);
 };
